@@ -83,8 +83,8 @@ let div = document.getElementById('temples');
 
 async function getTemples() {
 
-    let response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
-    let templeArray = await response.json();
+    const response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
+    const templeArray = await response.json();
     outputTemples(templeArray);
   
   };
@@ -95,7 +95,7 @@ async function getTemples() {
 
 
 function reset() {
-    return document.getElementById('temples').innerHTML = '';
+    return document.getElementById('temples').innerHTML = ''
   };
 
 /* sortBy Function */
